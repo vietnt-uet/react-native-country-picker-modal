@@ -32,7 +32,7 @@ const ImageFlag = memo(({ countryCode, flagSize }) => {
     }
     return (React.createElement(Image, { resizeMode: 'cover', style: [
             styles.imageFlag,
-            { borderColor: 'transparent',backgroundColor: 'red', height: flagSize, width: flagSize, borderRadius: flagSize },
+            { borderColor: 'transparent', height: flagSize, width: flagSize, borderRadius: flagSize },
         ], source: { uri: asyncResult.result } }));
 });
 const EmojiFlag = memo(({ countryCode, flagSize }) => {
